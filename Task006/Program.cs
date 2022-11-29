@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Clear();
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+//принимаем счило пользователя, найти остаток от деления на 2(%2), 
+//проверяем условие, если делится без остатка (остаток=0) - тогда да, если нет - то нет
+
+Console.WriteLine("Является ли число чётным?");
+Console.Write("Введите число: ");
+
+
+int num1 = Convert.ToInt32(Console.ReadLine()); // остаток от деления
+if (num1 == 0)
+{
+    Console.WriteLine($"Число {num1}, вроде как и чётное, но я сам до конца так и не разобрался, погугли");
+}
+
+int result = num1 % 2;
+if (num1 % 2 == 0)
+{
+    Console.WriteLine("да");
+} else {
+    Console.WriteLine("Нет");
+}
