@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и 
+// на выходе показывает вторую цифру этого числа. Выполнить с помощью числовых операций 
+// (целочисленное деление, остаток от деления).
+
+// принимаем трёхзначное число от пользователя. Нужно поделить число на 10 и, взять результат и поделить на 10 ещё раз, взяв остаток - искомое
+Console.Clear();
+Console.WriteLine("Введите трёхзначное число: ");
+
+int number = Convert.ToInt32(Console.ReadLine());
+
+int step1 = number / 10;
+
+int result = step1 % 10;
+
+Console.WriteLine($"Вторая цифра числа: {result}");
