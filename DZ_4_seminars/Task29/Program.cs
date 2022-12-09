@@ -12,7 +12,7 @@ int[] AssignValue(int[] array, int min, int max)
 {
     max = max + 1;
     int index = 0;
-    Random rnd = new Random(); // для быстров компов -. Рандом некст - пвсевдарандом, зависящий от времени компа
+    Random rnd = new Random(); // для быстрых компов -. Рандом некст - пвсевдарандом, зависящий от времени компа
     while (index < array.Length)
     {
         array[index] = rnd.Next(min, max);

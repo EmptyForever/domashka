@@ -1,21 +1,27 @@
-﻿// 1. принимает на вход два числа. А - любое целое. И - натуральное (целое, положительно, начиная с 1 и больше)
-// 2. число А возводим в степень B
-
-// 1. принимаем число А - любое целое. B - целое, больше либо равным 1
-// 2. создаём цикл. Число А надо умножить само на себя столько раз, сколько (B - 1).
-//  СОздаём счётчик i и i++ до тех пор пока он не станет = b-1
-// в цикле используем переменную для сохранения результат и присваиваем ему каждый раз новое значение (умножить на А)
-
+﻿// принимаем число пользователя
 Console.Clear();
 Console.WriteLine("Возводим число a в натуральную степень числа b");
-Console.WriteLine("Введите число a: ");
-int a = Convert.ToInt32(Console.Read());
+Console.Write("Введите число a: ");
+int a = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите число b: ");
-int b = Convert.ToInt32(Console.Read());
+Console.Write("Введите число b: ");
+int b = Convert.ToInt32(Console.ReadLine());
 while (b < 1) 
 {
-    Console.WriteLine("Введите натуральное число b (целые положительные числа от 1): ");
-    b = Convert.ToInt32(Console.Read());
+    Console.Write("Введите натуральное число b (целые положительные числа от 1): ");
+    b = Convert.ToInt32(Console.ReadLine());
 }
 
+// метод для возведения числа в натуральную степень
+int Exponentiation(int num, int degree)
+{
+    int result = num;
+    for (int i = 0; i < degree -1; i++)
+    {
+        result = result * num;
+    }
+    return result;
+}
+
+int exponentAB = Exponentiation(a, b);
+Console.WriteLine(exponentAB);
