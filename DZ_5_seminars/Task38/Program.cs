@@ -111,6 +111,6 @@ Console.WriteLine($"\nМинимальное число  --> {minElement}");
 Console.WriteLine($"Максимальное число --> {maxElement}");
 // находим реузльтат --> разницу между ними
 double result = maxElement - minElement;
+double endResult = Math.Round(result, 1);
 Console.WriteLine();
-Console.WriteLine($"Максимальное число - Минимальное число  --> {result}");
-Console.WriteLine($"{maxElement} - {minElement} = {result}");
+Console.WriteLine($"Разница между максимальным и минимальным --> {maxElement} - {minElement} = {endResult}");
