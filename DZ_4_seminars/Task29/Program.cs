@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-// создаём репозотирой заполненный нулями из count чисел
+// создаём массив заполненный нулями из count чисел
 int[] CreateArray(int count)
 {
     int[] arrayNum = new int[count]; //count ==8
